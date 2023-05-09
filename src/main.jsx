@@ -15,7 +15,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <App />,
-        loader: () => fetch(`http://localhost:3000/chocolates`)
+        loader: () => fetch(`https://practice-server-mahmud3301.vercel.app/chocolates`)
       },
       {
         path: '/AddChocolate',
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: '/EditChocolate/:id',
         element: <EditChocolate />,
-        loader: ({ params }) => fetch(`http://localhost:3000/chocolates/${params.id}`)
+        loader: ({ params }) => fetch(`https://practice-server-mahmud3301.vercel.app/chocolates/${params.id}`)
       }
     ]
   }

@@ -29,7 +29,7 @@ const App = () => {
       reverseButtons: true
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/chocolates/${_id}`, {
+        fetch(`https://practice-server-mahmud3301.vercel.app/chocolates/${_id}`, {
           method: "DELETE"
         })
           .then(response => response.json())

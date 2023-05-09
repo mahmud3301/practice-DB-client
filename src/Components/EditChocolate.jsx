@@ -23,7 +23,7 @@ const EditChocolate = () => {
             Image
         }
 
-        fetch(`http://localhost:3000/chocolates/${editChocolate._id}`, {
+        fetch(`https://practice-server-mahmud3301.vercel.app/chocolates/${editChocolate._id}`, {
             method: "PUT",
             body: JSON.stringify(newChocolate),
             headers: {

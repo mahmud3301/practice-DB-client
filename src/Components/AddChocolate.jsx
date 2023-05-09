@@ -20,7 +20,7 @@ const AddChocolate = () => {
         }
         // console.log(newChocolate);
 
-        fetch("http://localhost:3000/chocolates", {
+        fetch("https://practice-server-mahmud3301.vercel.app/chocolates", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",
